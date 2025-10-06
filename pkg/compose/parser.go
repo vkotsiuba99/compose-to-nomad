@@ -19,5 +19,6 @@ func ReadComposeFile(path string) types.ComposeFile {
 	if err != nil {
 		log.Fatalf("Failed to unmarshal Docker Compose YAML: %v", err)
 	}
+
 	return composeFile
 }
